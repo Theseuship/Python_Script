@@ -157,7 +157,7 @@ class GUI:
 
 	def basic(self):
 		self.refresh(1)
-		Tk.Label(self.frame[0], text="名字").grid(row=0, column=0)
+		Tk.Label(self.frame[0], text="名字（使用&分割名字）").grid(row=0, column=0)
 		name = Tk.Entry(self.frame[0])
 		name.grid(row=0, column=1, columnspan=4, sticky="ew")
 		name.insert(0, " & ".join(self.basic_info["name"]))
