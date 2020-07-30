@@ -11,7 +11,7 @@ import json
 
 
 def generateDict(d):
-	entry = OrderedDict(**{key: {i: False for i in l} for key, l in d.items()})
+	entry = {key: OrderedDict(**{i: False for i in l}) for key, l in d.items()})
 	for k in d:
 		entry[k].update({"记录": ""})
 		entry[k].update({False: False})
